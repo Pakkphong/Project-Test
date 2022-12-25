@@ -10,7 +10,9 @@ return(
         <article className="content-2" onClick={()=>setShowContent(!showContent)}>
         <span>
             <img src={profile_image_url} alt={name} className="logo"/>
+            <span>
             <h2>{name}</h2>
+            </span>
         </span>
         <span className="logo1">
             <h1><HiOutlineCalendar className="calendar"/>{time_open}</h1><h1>{time_close}</h1>

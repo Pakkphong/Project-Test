@@ -5,6 +5,7 @@ import RestaurantComponent from "./components/RestaurantComponent";
 import RestaurantData from "./data/RestaurantData";
 import { FaUserCircle, } from "react-icons/fa";
 import { TbNotification } from "react-icons/tb";
+import { BiSearch } from "react-icons/bi";
 
 function App() {
   const [dataNames,setDataNames] = useState(RestaurantData)
@@ -58,7 +59,9 @@ function App() {
         <div className="search-container">
           <DropdownComponent ChangeRestaurantData={ChangeRestaurantData}/>
           <span className="i">|</span>
+        <div>
         <labal htmlFor="search-form">
+          
           <input type="text" 
           className="search-input" 
           placeholder="Search name..."
@@ -66,6 +69,8 @@ function App() {
           onChange={(e)=>setNames(e.target.value)}
           />
         </labal>
+        <BiSearch className="btn-search"/>
+        </div>
       </div>
       <div className="content">
           {searchRestaurants(dataNames).map((data,index)=>{
