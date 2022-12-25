@@ -1,9 +1,13 @@
 import { HiOutlineCalendar } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
+import { useState } from "react";
 
-const RestaurantComponent=({name,profile_image_url,images,images2,images3,time_open,time_close,rating})=>{
+const RestaurantComponent=({name,profile_image_url,images,images2,
+                            images3,time_open,time_close,rating,address})=>{
+    const [showContent,setShowContent] = useState(false)
 return(
     <div className="single-restaurant">
+        <article className="content-2" onClick={()=>setShowContent(!showContent)}>
         <span>
             <img src={profile_image_url} alt={name} className="logo"/>
             <h2>{name}</h2>
@@ -17,6 +21,10 @@ return(
             <img src={images2} alt={name} className="menu1"/>
             <img src={images3} alt={name} className="menu1"/>
         </span>
+            <header>
+            {showContent && <h3>address : {address}</h3>}
+            </header>
+        </article>
     </div>
 )
 }

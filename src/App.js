@@ -5,7 +5,6 @@ import RestaurantComponent from "./components/RestaurantComponent";
 import RestaurantData from "./data/RestaurantData";
 import { FaUserCircle, } from "react-icons/fa";
 import { TbNotification } from "react-icons/tb";
-import SingleContent from './components/SingleContent';
 
 function App() {
   const [dataNames,setDataNames] = useState(RestaurantData)
@@ -53,13 +52,6 @@ function App() {
         <h1>Logo</h1><h1>Logo</h1>
       </aside>
         <main>
-          <div className="container-2">
-            <section>
-                {dataNames.map((data,index)=>{
-                  return <SingleContent key={data.id} {...data}/>
-                })}
-            </section>
-          </div>
           <div>
           <h5>Place List</h5>
           </div>

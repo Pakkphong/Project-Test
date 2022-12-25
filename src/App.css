@@ -14,13 +14,14 @@ body {
 }
 
 .top-nav {
-  background:#134b8a;
+  background-color: #134b8adb;
   color: white;
   height: 60px;
   width: 100%;
   position: fixed;
   overflow: hidden;
   box-shadow: 0 2.5px 2px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
 }
 
 .icons {
@@ -182,7 +183,7 @@ span {
   height: 75px;
   object-fit: cover;
   border-radius: 45px;
-  margin: 15px 10px;
+  margin: 15px 12px;
 }
 
 .logo1 {
@@ -198,23 +199,22 @@ span {
   align-items: center;
   margin: 10px;
   color: #134B8A;
-  margin-top: -40px;
+  margin-top: -32px;
 }
 
 .star {
   color: #134B8A;
-  margin-bottom: 3px;
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .menu1 {
-  width: 130px;
-  height: 130px;
+  width: 125px;
+  height: 125px;
   object-fit: cover;
   display: flex;
   border-radius: 5px;
   margin: auto;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 svg{
@@ -222,7 +222,8 @@ svg{
 }
 
 .calendar {
-  margin-left: 85px;
+  margin-left: 95px;
+  margin-bottom: -5px;
   font-size: 25px;
 }
 
@@ -232,3 +233,30 @@ svg{
   flex-wrap: wrap;
   margin-top: 40px;
 }
+
+.content-2 {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.content-2 header{
+  font-size: 10.5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -100px;
+  width: 500px;
+  height: 50px;
+}
+.content-2 h3{
+  color: #fefefe;
+  background-color: #134B8A;
+  position: relative;
+  border-radius: 25px 0 25px 25px;
+  padding: 5px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+
