@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 * {
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans Thai', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
 
 body {
@@ -87,7 +89,7 @@ body {
 
 @media only screen and (min-width: 375px) and (max-width:828px){
   .select-2 {
-    margin: 10px -40px 0 0;
+    margin: 10px -30px 0 0;
     width: 180px;
   }
 }
@@ -314,7 +316,7 @@ h2 {
 
 @media only screen and (min-width: 375px) and (max-width:828px) {
   h2 {
-    font-size: 15px;
+    font-size: 14px;
     width: 120px;
   }
 }
