@@ -24,9 +24,9 @@ body {
   backdrop-filter: blur(10px);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px){
   .top-nav{
-    width: 100vw;
+    width: 100%;
     box-shadow: none;
   }
 }
@@ -39,7 +39,7 @@ body {
   padding: 11px 10px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px){
   .icons{
     margin-left: -25%;
   }
@@ -85,6 +85,13 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 375px) and (max-width:828px){
+  .select-2 {
+    margin: 10px -40px 0 0;
+    width: 180px;
+  }
+}
+
 .container {
   display: flex;
 }
@@ -101,7 +108,7 @@ aside {
   box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px) {
   aside {
     height: 0;
     width: 0;
@@ -119,7 +126,7 @@ aside h1 {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px) {
   aside h1{
     color: #ffffff;
     border-bottom: none;
@@ -128,6 +135,7 @@ aside h1 {
     align-self: auto;
     margin-top: -12px;
     font-size: 17px;
+    border-radius: transparent;
   }
 }
 
@@ -150,7 +158,7 @@ h5 {
   margin-left: 130px;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:828px){
   h5 {
     font-size: 25px;
     margin-top: 20px;
@@ -173,9 +181,9 @@ h5 {
   margin-bottom: -5px;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:828px){
   .select-1 {
-    margin-left: 0;
+    margin-left: 70;
     width: 340px;
     margin-bottom: -15px;
     margin-top: -10px;
@@ -195,12 +203,10 @@ h5 {
   margin-top: 30px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px){
   .search-container {
-    margin-left: -115px;
-    display: block;
-    justify-content: center;
-    width: 300px;
+    margin-left: -105px;
+    width: 250px;
   }
 }
 
@@ -212,11 +218,12 @@ h5 {
   margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px){
   .search-input {
     width: 340px;
     height: 35px;
-    margin-top: -10px;
+    margin-top: 0px;
+    margin-left: -114px;
   }
 }
 
@@ -227,9 +234,10 @@ h5 {
   margin-top: 5px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px) {
   .i {
-    margin-left: -400px;
+    margin-left: -250px;
+    color: transparent;
   }
 }
 
@@ -242,11 +250,9 @@ h5 {
   color: #00000073;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px) {
   .btn-search {
-    margin-left: 315px;
-    margin-top: -125px;
-    margin-bottom: 13px;
+    color: transparent;
   }
 }
 
@@ -259,9 +265,11 @@ h5 {
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px) {
   .content div {
-    margin-left: -110px;
+    margin-top: -30px;
+    margin-bottom: 65px;
+    margin-left: -102px;
     width: 320px;
     height: 215px;
   }
@@ -285,7 +293,7 @@ span {
   margin: 15px 12px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px) {
   .logo {
     width: 450px;
     height: 75px;
@@ -303,7 +311,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width:828px) {
   h2 {
     font-size: 15px;
     width: 120px;
@@ -316,7 +324,7 @@ h2 {
   margin-top: -50px;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:828px){
   .logo1 {
     color: transparent;
   }
@@ -332,7 +340,7 @@ h2 {
   margin-top: -32px;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:828px){
   .rating {
       border-radius: 50px;
       border: 1px solid #134B8A;
@@ -352,7 +360,7 @@ h2 {
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:828px){
   .star {
     color: transparent;
   }
@@ -368,7 +376,7 @@ h2 {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:828px){
   .menu1 {
     width: 105px;
     height: 115px;
@@ -421,7 +429,7 @@ svg{
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) and (max-width:828px){
   .content-2 h3 {
     font-size: 12.5px;
     border-radius: 30px 0 30px 30px;
